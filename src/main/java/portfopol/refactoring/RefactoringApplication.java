@@ -1,13 +1,13 @@
-package m3c.demo;
+package portfopol.refactoring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PortfopolApplication {
+public class RefactoringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PortfopolApplication.class, args);
+		SpringApplication.run(RefactoringApplication.class, args);
 	}
 
 }

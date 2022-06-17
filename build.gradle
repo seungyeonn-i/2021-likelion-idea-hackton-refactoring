@@ -4,7 +4,7 @@ plugins {
 	id 'java'
 }
 
-group = 'm3c'
+group = 'portfopol'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
