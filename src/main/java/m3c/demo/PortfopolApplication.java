@@ -1,13 +1,13 @@
-package portpofol.portpofolspring;
+package m3c.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PortpofolSpringApplication {
+public class PortfopolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PortpofolSpringApplication.class, args);
+		SpringApplication.run(PortfopolApplication.class, args);
 	}
 
 }
