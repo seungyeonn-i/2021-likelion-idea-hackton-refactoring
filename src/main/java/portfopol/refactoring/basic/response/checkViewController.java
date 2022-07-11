@@ -15,4 +15,6 @@ public class checkViewController {
         model.addAttribute("data", model.getAttribute("year"));
         return "response/submit";
     }
+
+
 }
