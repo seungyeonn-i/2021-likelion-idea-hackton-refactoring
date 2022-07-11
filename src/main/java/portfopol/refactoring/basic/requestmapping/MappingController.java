@@ -9,12 +9,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MappingController {
 
-    private Logger log = LoggerFactory.getLogger(getClass());
-
-    @PostMapping(value = "/mapping-produes", produces = "text/html")
-    public String mappingProduces() {
-        log.info("mappingProduces");
-        return "ok";
-    }
 }
 

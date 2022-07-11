@@ -10,11 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class checkViewController {
 
-    @RequestMapping("/response-v1")
-    public String responseV1(Model model) {
-        model.addAttribute("data", model.getAttribute("year"));
-        return "response/submit";
-    }
 
 
 }
