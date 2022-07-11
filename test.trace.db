@@ -1,0 +1,447 @@
+2022-07-12 02:41:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:41:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:42:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:42:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:42:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:42:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:42:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:42:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:43:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255) not null,\000d\000ayear int not null,\000d\000amonth int not null,\000d\000aday int not null,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255) not null,
+year int not null,
+month int not null,
+day int not null,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:43:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:43:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:43:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId int [*]by default as identity,\000d\000adata varchar(255),\000d\000ayear int,\000d\000amonth int,\000d\000aday int,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId int by default as identity,
+data varchar(255),
+year int,
+month int,
+day int,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:45:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(255) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(255) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:45:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(255) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(255) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:45:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(255) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(255) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:45:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(255) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(255) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:46:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:46:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:46:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL AUTO_INCREMENT,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table MyData
+(
+userId bigint(5) NOT NULL AUTO_INCREMENT,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:47:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL AUTO_INCREMENT,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL AUTO_INCREMENT,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:48:46 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL AUTO_INCREMENT,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aprimary key (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL AUTO_INCREMENT,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+primary key (userId)
+) [42001-212]
+2022-07-12 02:50:13 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "(\000d\000a[*]userId bigint(5) NOT NULL AUTO_INCREMENT,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000a)"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(
+userId bigint(5) NOT NULL AUTO_INCREMENT,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+) [42001-212]
+2022-07-12 02:50:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:50:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL AUTO_INCREMENT,\000d\000adata varchar(100) NOT NULL,\000d\000ayear int(4) NOT NULL,\000d\000amonth int(2) NOT NULL,\000d\000aday int(2) NOT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL AUTO_INCREMENT,
+data varchar(100) NOT NULL,
+year int(4) NOT NULL,
+month int(2) NOT NULL,
+day int(2) NOT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:52:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:52:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000adata varchar(100) DEFAULT NULL ,\000d\000ayear int(4) DEFAULT NULL,\000d\000amonth int(2) DEFAULT NULL,\000d\000aday int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+data varchar(100) DEFAULT NULL ,
+year int(4) DEFAULT NULL,
+month int(2) DEFAULT NULL,
+day int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:53:57 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:53:57 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'MyData'\000d\000a(\000d\000a'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000a'data' varchar(100) DEFAULT NULL ,\000d\000a'year' int(4) DEFAULT NULL,\000d\000a'month' int(2) DEFAULT NULL,\000d\000a'day' int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'MyData'
+(
+'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+'data' varchar(100) DEFAULT NULL ,
+'year' int(4) DEFAULT NULL,
+'month' int(2) DEFAULT NULL,
+'day' int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:53:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:53:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'MyData'\000d\000a(\000d\000a'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000a'data' varchar(100) DEFAULT NULL ,\000d\000a'year' int(4) DEFAULT NULL,\000d\000a'month' int(2) DEFAULT NULL,\000d\000a'day' int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'MyData'
+(
+'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+'data' varchar(100) DEFAULT NULL ,
+'year' int(4) DEFAULT NULL,
+'month' int(2) DEFAULT NULL,
+'day' int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:53:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:53:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'MyData'\000d\000a(\000d\000a'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000a'data' varchar(100) DEFAULT NULL ,\000d\000a'year' int(4) DEFAULT NULL,\000d\000a'month' int(2) DEFAULT NULL,\000d\000a'day' int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'MyData'
+(
+'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+'data' varchar(100) DEFAULT NULL ,
+'year' int(4) DEFAULT NULL,
+'month' int(2) DEFAULT NULL,
+'day' int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:53:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:53:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'MyData'\000d\000a(\000d\000a'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000a'data' varchar(100) DEFAULT NULL ,\000d\000a'year' int(4) DEFAULT NULL,\000d\000a'month' int(2) DEFAULT NULL,\000d\000a'day' int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'MyData'
+(
+'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+'data' varchar(100) DEFAULT NULL ,
+'year' int(4) DEFAULT NULL,
+'month' int(2) DEFAULT NULL,
+'day' int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:53:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:53:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS [*]'MyData'\000d\000a(\000d\000a'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000a'data' varchar(100) DEFAULT NULL ,\000d\000a'year' int(4) DEFAULT NULL,\000d\000a'month' int(2) DEFAULT NULL,\000d\000a'day' int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS 'MyData'
+(
+'userId' bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+'data' varchar(100) DEFAULT NULL ,
+'year' int(4) DEFAULT NULL,
+'month' int(2) DEFAULT NULL,
+'day' int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:54:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if [*]exist member CASCADE"; expected "EXISTS"; SQL statement:
+drop table if exist member CASCADE [42001-212]
+2022-07-12 02:54:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000adata varchar(100) DEFAULT NULL ,\000d\000ayear int(4) DEFAULT NULL,\000d\000amonth int(2) DEFAULT NULL,\000d\000aday int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+data varchar(100) DEFAULT NULL ,
+year int(4) DEFAULT NULL,
+month int(2) DEFAULT NULL,
+day int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:54:12 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000adata varchar(100) DEFAULT NULL ,\000d\000ayear int(4) DEFAULT NULL,\000d\000amonth int(2) DEFAULT NULL,\000d\000aday int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+data varchar(100) DEFAULT NULL ,
+year int(4) DEFAULT NULL,
+month int(2) DEFAULT NULL,
+day int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:54:13 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS MyData\000d\000a(\000d\000auserId bigint[*](5) NOT NULL BY DEFAULT AS IDENTITY,\000d\000adata varchar(100) DEFAULT NULL ,\000d\000ayear int(4) DEFAULT NULL,\000d\000amonth int(2) DEFAULT NULL,\000d\000aday int(2) DEFAULT NULL,\000d\000aPRIMARY KEY (userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS MyData
+(
+userId bigint(5) NOT NULL BY DEFAULT AS IDENTITY,
+data varchar(100) DEFAULT NULL ,
+year int(4) DEFAULT NULL,
+month int(2) DEFAULT NULL,
+day int(2) DEFAULT NULL,
+PRIMARY KEY (userId)
+) [42001-212]
+2022-07-12 02:56:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table member\000d\000a[*]CREATE TABLE IF NOT EXISTS MyData\000d\000a      (\000d\000a         id   bigint generated by default as identity,\000d\000a         name varchar(255),\000d\000a         primary key (id)\000d\000a)"; SQL statement:
+create table member
+CREATE TABLE IF NOT EXISTS MyData
+      (
+         id   bigint generated by default as identity,
+         name varchar(255),
+         primary key (id)
+) [42000-212]
+2022-07-12 02:59:34 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year bigint,\000d\000amonth bigint\000d\000aday bigint\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year bigint,
+month bigint
+day bigint
+primary key(userId)
+) [42001-212]
+2022-07-12 02:59:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year int(4),\000d\000amonth  int(4),\000d\000aday  int(4),\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year int(4),
+month  int(4),
+day  int(4),
+primary key(userId)
+) [42001-212]
+2022-07-12 03:01:01 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year varchar(255),\000d\000amonth varchar(255),\000d\000aday varchar(255),\000d\000a\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year varchar(255),
+month varchar(255),
+day varchar(255),
+
+primary key(userId)
+) [42001-212]
+2022-07-12 03:01:16 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year varchar(16),\000d\000amonth varchar(16),\000d\000aday varchar(16),\000d\000a\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year varchar(16),
+month varchar(16),
+day varchar(16),
+
+primary key(userId)
+) [42001-212]
+2022-07-12 03:01:18 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year varchar(16),\000d\000amonth varchar(16),\000d\000aday varchar(16),\000d\000a\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year varchar(16),
+month varchar(16),
+day varchar(16),
+
+primary key(userId)
+) [42001-212]
+2022-07-12 03:01:24 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000a[*]year varchar(16),\000d\000amonth varchar(16),\000d\000aday varchar(16),\000d\000aprimary key(userId)\000d\000a)"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+year varchar(16),
+month varchar(16),
+day varchar(16),
+primary key(userId)
+) [42001-212]
+2022-07-12 03:02:50 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table Mydata add [*]year int not null"; expected "identifier"; SQL statement:
+alter table Mydata add year int not null [42001-212]
+2022-07-12 03:02:56 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table Mydata add [*]year int not null"; expected "identifier"; SQL statement:
+alter table Mydata add year int not null [42001-212]
+2022-07-12 03:02:57 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table Mydata add [*]year int not null"; expected "identifier"; SQL statement:
+alter table Mydata add year int not null [42001-212]
+2022-07-12 03:03:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000amyyear int[*](4),\000d\000a\000d\000aprimary key(userId)\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+myyear int(4),
+
+primary key(userId)
+) [42001-212]
+2022-07-12 03:03:27 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]primary key(userId)\000d\000a)"; SQL statement:
+primary key(userId)
+) [42000-212]
+2022-07-12 03:04:07 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table Mydata\000d\000a(\000d\000auserId bigint generated by default as identity,\000d\000adata varchar(255),\000d\000amyyear varchar(255),\000d\000amymonth varchar(255),\000d\000amyday varchar(255),[*]"; expected "identifier"; SQL statement:
+create table Mydata
+(
+userId bigint generated by default as identity,
+data varchar(255),
+myyear varchar(255),
+mymonth varchar(255),
+myday varchar(255), [42001-212]
