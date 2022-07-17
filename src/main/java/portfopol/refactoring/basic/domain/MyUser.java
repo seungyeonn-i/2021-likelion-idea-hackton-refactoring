@@ -1,4 +1,4 @@
-package portfopol.refactoring.basic;
+package portfopol.refactoring.basic.domain;
 
 import lombok.Getter;
 import lombok.Setter;

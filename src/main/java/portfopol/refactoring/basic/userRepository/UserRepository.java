@@ -1,6 +1,6 @@
 package portfopol.refactoring.basic.userRepository;
 
-import portfopol.refactoring.basic.MyUser;
+import portfopol.refactoring.basic.domain.MyUser;
 
 import java.util.List;
 import java.util.Optional;
