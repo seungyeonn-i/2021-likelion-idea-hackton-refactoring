@@ -1,5 +1,7 @@
 package portfopol.refactoring.basic.repository;
 
+import lombok.Getter;
+import lombok.Setter;
 import portfopol.refactoring.basic.domain.MyData;
 
 import java.util.List;
