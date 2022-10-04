@@ -2,13 +2,17 @@ package portfopol.refactoring.basic.request;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import portfopol.refactoring.basic.domain.DateData;
 import portfopol.refactoring.basic.domain.MyData;
 import portfopol.refactoring.basic.repository.MemoryDataRepository;
 
+@Slf4j
 @Controller
 @RequestMapping("/input")
 @RequiredArgsConstructor
@@ -22,21 +26,25 @@ public class inputController {
     }
 
     @PostMapping("/page1")
-    public String inputPage1(@RequestParam("year") int year,
-                             @RequestParam("month") int month,
-                             @RequestParam("day") int day,
-                             Model model) {
+    public String inputPage(@Validated @ModelAttribute DateData dateData,
+                             BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
+
+        //성공 로직
         MyData myData = new MyData();
-        myData.setYear(year);
-        myData.setMonth(month);
-        myData.setDay(day);
+        myData.setYear(dateData.getYear());
+        myData.setMonth(dateData.getMonth());
+        myData.setDay(dateData.getDay());
 
-//        memoryDataRepository.save(myData);
-        model.addAttribute("myData", myData);
+        log.info(Integer.toString(dateData.getYear()));
+        log.info(Integer.toString(dateData.getMonth()));
+
+//        MyData savedDate = MemoryDataRepository.save(myData);
+
+//        redirectAttributes.addAttribute("dateData",savedDate.getDataId())
 
         //db 저장
-        return "/input/secondPage";
+        return "redirect:/input/page2";
     }
 
     @GetMapping("/page2")
@@ -46,31 +54,46 @@ public class inputController {
     }
 
     @PostMapping("/page2")
-    public String inputPage2(@RequestParam("content") String content, Model model) {
+    public String inputPage2(@Validated @ModelAttribute DateData dateData,
+                             BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-        MyData myData = new MyData();
-        myData.setData(content);
-        model.addAttribute("myData",myData);
-        return "input/thirdPage";
+//        MyData myData = new MyData();
+//        myData.setData(content);
+//        model.addAttribute("myData",myData);
+        return "redirect:/input/page3";
     }
 
+    @GetMapping("/page3")
+    public String getPage3() {
+        //db 저장
+        return "/input/thirdPage";
+    }
 
-//    @ResponseBody
-//    @RequestMapping("/third-page")
-//    public String inputPage3(@RequestParam("summary") String summary) {
-//        log.info("summary = {}", summary);
-//        //db 저장
-//        return "ok";
-//    }
-//
-//
-//    @ResponseBody
-//    @RequestMapping("/fourth-page") //data get 해오기
-//    public String inputPage4(@RequestParam("summary") String summary) {
-//        log.info("summary = {}", summary);
-//        //db 저장
-//        return "ok";
-//    }
+    @PostMapping("/page3")
+    public String inputPage3(@Validated @ModelAttribute DateData dateData,
+                             BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+
+//        MyData myData = new MyData();
+//        myData.setData(content);
+//        model.addAttribute("myData",myData);
+        return "redirect:/input/page4";
+    }
+    @GetMapping("/page4")
+    public String getPage4() {
+        //db 저장
+        return "/input/fourthPage";
+    }
+
+    @PostMapping("/page4")
+    public String inputPage4(@Validated @ModelAttribute DateData dateData,
+                             BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+
+//        MyData myData = new MyData();
+//        myData.setData(content);
+//        model.addAttribute("myData",myData);
+        return "redirect:/output/submit.html";
+    }
+
 
 
 }

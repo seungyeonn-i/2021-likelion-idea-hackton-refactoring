@@ -20,7 +20,6 @@ public class MemoryDataRepository implements DataRepository {
         myData.setDataId(++sequence);
         store.put(myData.getDataId(), myData);
         return myData;
-
     }
 
     @Override
