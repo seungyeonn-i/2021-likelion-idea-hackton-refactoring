@@ -22,6 +22,8 @@ public class inputController {
 
     @GetMapping("/page1")
     public String getPage1() {
+        log.info("get1page");
+
         return "/input/firstPage";
     }
 
@@ -38,17 +40,18 @@ public class inputController {
 
         log.info(Integer.toString(dateData.getYear()));
         log.info(Integer.toString(dateData.getMonth()));
+        log.info(Integer.toString(dateData.getDay()));
 
 //        MyData savedDate = MemoryDataRepository.save(myData);
 
 //        redirectAttributes.addAttribute("dateData",savedDate.getDataId())
-
-        //db 저장
         return "redirect:/input/page2";
     }
 
     @GetMapping("/page2")
     public String getPage2() {
+        log.info("get2page");
+
         //db 저장
         return "/input/secondPage";
     }
@@ -65,6 +68,8 @@ public class inputController {
 
     @GetMapping("/page3")
     public String getPage3() {
+        log.info("get3page");
+
         //db 저장
         return "/input/thirdPage";
     }
@@ -81,6 +86,7 @@ public class inputController {
     @GetMapping("/page4")
     public String getPage4() {
         //db 저장
+        log.info("get4page");
         return "/input/fourthPage";
     }
 
