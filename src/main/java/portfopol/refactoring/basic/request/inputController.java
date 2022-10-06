@@ -3,14 +3,15 @@ package portfopol.refactoring.basic.request;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import portfopol.refactoring.basic.domain.DateData;
 import portfopol.refactoring.basic.domain.MyData;
-import portfopol.refactoring.basic.repository.MemoryDataRepository;
+import portfopol.refactoring.basic.domain.SummaryData;
+import portfopol.refactoring.basic.dataRepository.MemoryDataRepository;
+import portfopol.refactoring.basic.user.User;
 
 @Slf4j
 @Controller
@@ -42,9 +43,14 @@ public class inputController {
         log.info(Integer.toString(dateData.getMonth()));
         log.info(Integer.toString(dateData.getDay()));
 
-//        MyData savedDate = MemoryDataRepository.save(myData);
+        MyData savedDate = memoryDataRepository.save(myData);
 
-//        redirectAttributes.addAttribute("dateData",savedDate.getDataId())
+        //data id에 맞추어 저장
+        //뒤로 갈 수록 데이터 덮어씌여지지 않는지 확인해야함
+        //userdata 넘겨야함
+        redirectAttributes.addAttribute("dateData",savedDate.getDataId());
+
+
         return "redirect:/input/page2";
     }
 
@@ -57,12 +63,18 @@ public class inputController {
     }
 
     @PostMapping("/page2")
-    public String inputPage2(@Validated @ModelAttribute DateData dateData,
+    public String inputPage2(@Validated @ModelAttribute SummaryData summaryData,
                              BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
 //        MyData myData = new MyData();
-//        myData.setData(content);
-//        model.addAttribute("myData",myData);
+//        myData.setSummary(summaryData.getSummary());
+//
+//        log.info(Long.toString(myData.getDataId()));
+//        log.info(myData.getSummary());
+//
+//        MyData savedSummary = memoryDataRepository.save(myData);
+//        redirectAttributes.addAttribute("summaryData",savedSummary.getDataId());
+
         return "redirect:/input/page3";
     }
 
@@ -78,9 +90,7 @@ public class inputController {
     public String inputPage3(@Validated @ModelAttribute DateData dateData,
                              BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-//        MyData myData = new MyData();
-//        myData.setData(content);
-//        model.addAttribute("myData",myData);
+        MyData myData = new MyData();
         return "redirect:/input/page4";
     }
     @GetMapping("/page4")

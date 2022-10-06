@@ -1,4 +1,4 @@
-package portfopol.refactoring.basic.repository;
+package portfopol.refactoring.basic.dataRepository;
 
 import org.springframework.stereotype.Repository;
 import portfopol.refactoring.basic.domain.MyData;
@@ -17,6 +17,7 @@ public class MemoryDataRepository implements DataRepository {
 
     @Override
     public MyData save(MyData myData) {
+        //dataid, userid 지정!@@
         myData.setDataId(++sequence);
         store.put(myData.getDataId(), myData);
         return myData;
