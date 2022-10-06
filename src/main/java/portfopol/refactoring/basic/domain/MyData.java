@@ -11,6 +11,8 @@ public class MyData {
     private Long dataId;
     private Long userId;
 
+
+
     private String summary;
 
     private String keyword;
@@ -18,4 +20,9 @@ public class MyData {
     private int year;
     private int month;
     private int day;
+
+    public MyData(Long dataId, Long userId) {
+        this.dataId = dataId;
+        this.userId = userId;
+    }
 }

@@ -8,6 +8,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import portfopol.refactoring.basic.domain.DateData;
+import portfopol.refactoring.basic.domain.KeywordData;
 import portfopol.refactoring.basic.domain.MyData;
 import portfopol.refactoring.basic.domain.SummaryData;
 import portfopol.refactoring.basic.dataRepository.MemoryDataRepository;
@@ -34,7 +35,7 @@ public class inputController {
 
 
         //성공 로직
-        MyData myData = new MyData();
+        MyData myData = new MyData(0L,0L);
         myData.setYear(dateData.getYear());
         myData.setMonth(dateData.getMonth());
         myData.setDay(dateData.getDay());
@@ -66,14 +67,14 @@ public class inputController {
     public String inputPage2(@Validated @ModelAttribute SummaryData summaryData,
                              BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-//        MyData myData = new MyData();
-//        myData.setSummary(summaryData.getSummary());
-//
-//        log.info(Long.toString(myData.getDataId()));
-//        log.info(myData.getSummary());
-//
-//        MyData savedSummary = memoryDataRepository.save(myData);
-//        redirectAttributes.addAttribute("summaryData",savedSummary.getDataId());
+        MyData myData = new MyData(0L,0L);
+        myData.setSummary(summaryData.getSummary());
+
+        log.info(Long.toString(myData.getDataId()));
+        log.info(myData.getSummary());
+
+        MyData savedSummary = memoryDataRepository.save(myData);
+        redirectAttributes.addAttribute("summaryData",savedSummary.getDataId());
 
         return "redirect:/input/page3";
     }
@@ -87,10 +88,18 @@ public class inputController {
     }
 
     @PostMapping("/page3")
-    public String inputPage3(@Validated @ModelAttribute DateData dateData,
+    public String inputPage3(@Validated @ModelAttribute KeywordData keywordData,
                              BindingResult bindingResult, RedirectAttributes redirectAttributes) {
 
-        MyData myData = new MyData();
+        MyData myData = new MyData(0L,0L);
+        myData.setKeyword(keywordData.getKeyword());
+
+        MyData savedKeyword = memoryDataRepository.save(myData);
+        redirectAttributes.addAttribute("keywordData", savedKeyword.getDataId());
+
+        log.info(memoryDataRepository.findById(0L).toString());
+        log.info(memoryDataRepository.findAll().toString());
+
         return "redirect:/input/page4";
     }
     @GetMapping("/page4")

@@ -10,5 +10,12 @@ public class SummaryData {
     private Long userId;
 
     private String summary;
+
+
+    public SummaryData(Long dataId, Long userId) {
+        this.dataId = dataId;
+        this.userId = userId;
+    }
+
 }
 

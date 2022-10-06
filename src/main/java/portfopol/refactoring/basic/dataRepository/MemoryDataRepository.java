@@ -1,13 +1,12 @@
 package portfopol.refactoring.basic.dataRepository;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 import portfopol.refactoring.basic.domain.MyData;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
+@Slf4j
 @Repository
 public class MemoryDataRepository implements DataRepository {
 
@@ -20,16 +19,17 @@ public class MemoryDataRepository implements DataRepository {
         //dataid, userid 지정!@@
         myData.setDataId(++sequence);
         store.put(myData.getDataId(), myData);
+        log.info("save!!!!!");
         return myData;
     }
 
     @Override
     public Optional<MyData> findById(Long userId) {
-        return Optional.empty();
+        return Optional.ofNullable(store.get(userId));
     }
 
     @Override
     public List<MyData> findAll() {
-        return null;
+        return new ArrayList<>(store.values());
     }
 }
